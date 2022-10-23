@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <h1 class="text-center Title">New Weather Report</h1>
+        <div class="col-md-6 offset-md-3">
+            <form action="/Report" method="POST" class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="title" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>    
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea class="form-control" type="text" id="description" name="description"
+                        required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary">Add Weather Report</button>
+                    <a href="/list">
+                        <button type="button" class="btn btn-primary" style="margin-left: 72.2%;" >Return to list</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+        body {
+  background-image: url("https://res.cloudinary.com/dw9x8xtdz/image/upload/v1666460855/background_weather_yhhmvc.png");
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+    }
+    .Title{
+  padding-top: 2%;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-size: 250%;
+    color: #FFFFFF;
+}
+label{
+    color: #FFFFFF;
+}
+</style>
