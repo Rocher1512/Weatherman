@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node iex.js"
+    "start":"node Index.js"
   },
   "keywords": [],
   "author": "",
