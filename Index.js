@@ -140,6 +140,6 @@ app.get('/api/report', async(req, res) =>{
 
 const port = process.env.PORT;
 app.listen(port, () => {
-    console.log('Serving')
+    console.log('Serving on ' + port)
     
 })
