@@ -24,7 +24,7 @@ const DBurl = "mongodb+srv://First:RTvh0sFZ10WvVKeY@cluster0.gc1ymp4.mongodb.net
 mongoose.connect(DBurl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+}); 
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
