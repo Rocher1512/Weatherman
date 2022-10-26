@@ -67,7 +67,7 @@ app.post('/user',(req,res) => {
         let session = req.session;
         session.userid = "1978@asd2df#";
         console.log(req.session)
-        res.redirect("/List");
+        res.redirect("/list");
     } 
     else{
     res.send("403");
@@ -109,7 +109,7 @@ app.get("/Report/:id", async (req,res) => {
         res.render("login");
     }else{
     const Report = await report.findById(req.params.id);
-    res.render("Edit", {Report});
+    res.render("edit", {Report});
     }
 });
 
@@ -140,6 +140,5 @@ app.get('/api/report', async(req, res) =>{
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log('Serving on ' + port)
-    
+    console.log('Serving on ' + port);
 })
