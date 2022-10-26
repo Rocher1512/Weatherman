@@ -16,7 +16,7 @@ const app = express();
 
 app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'Views'));
 
 //mongodb+srv://First:RTvh0sFZ10WvVKeY@cluster0.gc1ymp4.mongodb.net/?retryWrites=true&w=majority
 //mongodb://localhost:27017/Weather
