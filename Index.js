@@ -58,7 +58,7 @@ app.use(cookieParser());
 //Gui Website requests
 
 app.get("/", async (req,res) => {
-    res.render("Login");
+    res.render("login");
 });
 
 app.post('/user',(req,res) => {
@@ -81,7 +81,7 @@ app.get("/list", async (req,res) => {
         res.render("login");
     }else{
     const Reports = await report.find({});
-    res.render("List", {Reports});
+    res.render("list", {Reports});
     }
 });
 
